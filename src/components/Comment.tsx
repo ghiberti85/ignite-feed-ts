@@ -19,13 +19,17 @@ export function Comment ({ content, onDeleteComment }: CommentProps) {
 
     function handleLikeComment() {
         setLikeCount((state) => {
-            return state +1
+            return state + 1
         });
     }
 
     return (
         <div className={styles.comment}>
-            <Avatar hasBorder={false} src="https://github.com/ghiberti85.png" alt="" />
+            <Avatar 
+                hasBorder={false} 
+                src="https://github.com/ghiberti85.png" 
+                alt="" 
+            />
             
             <div className={styles.commentBox}>
                 <div className={styles.commentContent}>
